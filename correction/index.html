@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MasterMind</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
+    <script defer src="./scripts/mains.js"></script>
+    <link rel="stylesheet" href="./syles/global.css">
+</head>
+
+<body>
+    <h1>Le jeu du Mastermind</h1>
+    <main>
+        <div class="game">
+            <table>
+                <tbody>
+                    <tr>
+                        <td>1</td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td>2</td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td>3</td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td>4</td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td>5</td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td>6</td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td>7</td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td>8</td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td>9</td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td>10</td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td>11</td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td>12</td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+
+                </tbody>
+                <tfoot>
+                    <tr>
+                        <td>Proposition</td>
+                        <td>
+                            <div id="ball1"></div>
+                        </td>
+                        <td>
+                            <div id="ball2"></div>
+                        </td>
+                        <td>
+                            <div id="ball3"></div>
+                        </td>
+                        <td>
+                            <div id="ball4"></div>
+                        </td>
+                        <td><button id="play" >Valider</button></td>
+                    </tr>
+                </tfoot>
+            </table>
+            <div class="propal hidden">
+                <div class="yellow"></div>
+                <div class="blue"></div>
+                <div class="red"></div>
+                <div class="green"></div>
+                <div class="white"></div>
+                <div class="black"></div>
+            </div>
+
+        </div>
+
+        <div class="rules">
+            <h2>Règles du jeu :</h2>
+            <div>
+                L'ordinateur a créé une combinaison de 4 couleurs parmi ces choix :
+                <div class="colors">
+                    <div class="yellow"></div>
+                    <div class="blue"></div>
+                    <div class="red"></div>
+                    <div class="green"></div>
+                    <div class="white"></div>
+                    <div class="black"></div>
+                </div>
+                La combinaison finale peut contenir une même couleurs plusieurs fois.
+            </div>
+            <div>
+                Votre but ? Découvrir la combinaison jouée en 12 tentatives. Pour cela, proposez une combinaison dans le cadre le plus en bas et validez la.
+            </div>
+            <div>
+                Votre proposition apparaitra alors dans la ligne correspondant à votre nombre de tentatives avec à ses côtés :
+                <ul>
+                    <li>Autant de ronds rouge qu'il y a d'éléments bien placés</li>
+                    <li>Autant de ronds blanc qu'il y a d'éléments mal placés</li>
+                </ul>
+                Attention, vous saurez uniquement le nombre d'éléments bien placés et mal placés mais pas desquels en particulier il s'agit.
+            </div>
+        </div>
+    </main>
+    <div class="modal-result hidden">
+        <div class="modal-content">
+            <div class="message"></div>
+            <button id="replay">Rejouer</button>
+        </div>
+    </div>
+</body>
+
+</html>
