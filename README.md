@@ -1,9 +1,10 @@
-# Mastermind
+# Mastermind 🧠
 
 Mastermind Game created during my training at Interface3 – Brussels
 
 
-## Technologies Used
+&nbsp;
+## 🛠️ Technologies used
 
 * HTML5
 * CSS3
@@ -11,7 +12,8 @@ Mastermind Game created during my training at Interface3 – Brussels
 * VS Code
 
 
-## Visuals
+&nbsp;
+## 👀 Visuals
 ![Imgur](https://tinyurl.com/3t9yhnpw)
 ![Imgur](https://tinyurl.com/55hds2vu)
 ![Imgur](https://tinyurl.com/y3max3ed)
